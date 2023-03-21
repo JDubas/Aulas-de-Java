@@ -14,8 +14,18 @@ public class View {
 		
 		//Calcular a idade do carro
 		int i = gol.calcularIdade(2023);
+		gol.atualizarValor(0.2);
 		
 		//Exibir a idade
 		System.out.println("Idade do carro: " + i);
+		System.out.println("valor do carro: " + gol.valor);
+		
+		double seguro = gol.calcularSeguro();
+		System.out.println("O valor do carro: " + seguro);
+		
+		double valorParcela = gol.parcelarSeguro(3);
+		
+		System.out.println("Parcelando fica : " + valorParcela + " por parcela");
+		
 	}
 }
