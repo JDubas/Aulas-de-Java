@@ -38,5 +38,6 @@ public class Exercicio {
 		System.out.println();
 		System.out.println(nome + " " + media);
 		//sysout CTRL + espaco
+		leitor.close();
 	}
 }

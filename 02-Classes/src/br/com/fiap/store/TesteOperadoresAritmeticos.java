@@ -30,6 +30,6 @@ public class TesteOperadoresAritmeticos {
 		x *=5; //x = x * 5;
 		x /=6; //x = x / 6;
 		System.out.println(x);
-		
+		leitor.close();
 	}
 }
