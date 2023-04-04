@@ -13,10 +13,10 @@ public class Terminal {
 		produto.setPrecoVenda(150);
 		
 		
-		System.out.println(produto.getId());
-		System.out.println(produto.getNome());
-		System.out.println(produto.getPrecoCusto());
-		System.out.println(produto.getPrecoVenda());
+		System.out.println("| Id    : "+produto.getId());
+		System.out.println("| Nome  : "+produto.getNome());
+		System.out.println("| Custo : "+produto.getPrecoCusto());
+		System.out.println("| Preco : "+produto.getPrecoVenda());
 
 		//			  (º º)
 		//			  \ | /
@@ -26,7 +26,10 @@ public class Terminal {
 		//			   / \
 		//		      /   \
 		//	--------------------------------			  
-		//produto.calcularLucro(); 
+		
+		produto.atualizarEstoque(10);
+		System.out.println("| Lucro : " + produto.calcularLucro());
+		System.out.println("| Qtd   : " + produto.getQuantidade());
 	}
 
 }

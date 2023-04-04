@@ -9,12 +9,12 @@ public class Produtos {
 
 	private double precoVenda;
 	
-	double calcularLucro() {
+	public double calcularLucro() {
 		double lucro =  precoVenda - precoCusto;
 		return lucro;
 	}
 	
-	void atualizarEstoque(int qtd) {
+	public void atualizarEstoque(int qtd) {
 		if (qtd > 0) {
 			quantidade += qtd;
 		}else {
