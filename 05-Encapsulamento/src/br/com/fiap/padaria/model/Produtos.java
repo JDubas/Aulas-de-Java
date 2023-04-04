@@ -1,11 +1,11 @@
 package br.com.fiap.padaria.model;
 
 public class Produtos {
-	int id, quantidade;
+	private int id, quantidade;
 	
-	String nome;
+	private String nome;
 	
-	double precoCusto;
+	private double precoCusto;
 
 	private double precoVenda;
 	
